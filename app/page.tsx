@@ -87,7 +87,7 @@ export default function HomePage() {
           <SmartImage
             file="hero-storefront.jpg"
             alt="Brookshire Washateria & Cleaners storefront on FM 359 in Brookshire, Texas"
-            className="aspect-[4/3] rounded-3xl ring-1 ring-white/20 lg:aspect-[4/5]"
+            className="aspect-[16/10] rounded-3xl ring-1 ring-white/20"
             priority
             sizes="(min-width: 1024px) 40vw, 100vw"
           />
