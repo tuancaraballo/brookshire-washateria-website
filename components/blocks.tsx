@@ -43,8 +43,8 @@ export function PageHero({
   children?: React.ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden bg-navy text-white">
-      <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-aqua/20 blur-2xl" />
+    <section className="relative overflow-hidden bg-forest text-white">
+      <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-sky/20 blur-2xl" />
       <div className="container-site relative grid gap-10 py-12 md:py-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
         <div>
           <Breadcrumbs items={crumbs} />
@@ -54,7 +54,7 @@ export function PageHero({
             <ul className="mt-6 flex flex-wrap gap-2">
               {highlights.map((h) => (
                 <li key={h} className="flex items-center gap-1.5 rounded-full bg-white/10 px-3.5 py-1.5 text-sm font-medium ring-1 ring-white/20">
-                  <Icon name="check" className="h-4 w-4 text-sun" /> {h}
+                  <Icon name="check" className="h-4 w-4 text-lime" /> {h}
                 </li>
               ))}
             </ul>
@@ -103,7 +103,7 @@ export function PriceTable({ group, compact = false }: { group: PriceGroup; comp
                 {item.name}
                 {item.es && <span className="block text-xs font-normal text-ink-soft" lang="es">{item.es}</span>}
               </th>
-              <td className="whitespace-nowrap px-5 py-3 text-right font-semibold text-navy">{formatPrice(item)}</td>
+              <td className="whitespace-nowrap px-5 py-3 text-right font-semibold text-forest">{formatPrice(item)}</td>
               {group.showExpress && (
                 <td className="whitespace-nowrap px-5 py-3 text-right text-ink-soft">
                   {item.express !== undefined ? formatPrice(item, item.express) : "—"}
@@ -116,7 +116,7 @@ export function PriceTable({ group, compact = false }: { group: PriceGroup; comp
       {group.showExpress && <p className="border-t border-line px-5 py-3 text-xs text-ink-soft">{EXPRESS_NOTE}</p>}
       {compact && group.items.length > 8 && (
         <p className="border-t border-line px-5 py-3 text-sm">
-          <Link href="/pricing" className="font-semibold text-aqua-dark hover:text-navy">
+          <Link href="/pricing" className="font-semibold text-sky-dark hover:text-forest">
             See all {group.items.length} items on the full price list →
           </Link>
         </p>
@@ -136,7 +136,7 @@ export function FaqList({ faqs, title = "Frequently asked questions" }: { faqs: 
             <details key={f.q} className="group px-6 py-5 [&_summary::-webkit-details-marker]:hidden">
               <summary className="flex cursor-pointer items-center justify-between gap-4 text-lg font-semibold text-ink">
                 {f.q}
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-aqua-light text-aqua-dark transition group-open:rotate-45">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-sky-light text-sky-dark transition group-open:rotate-45">
                   +
                 </span>
               </summary>
@@ -154,9 +154,9 @@ export function CtaBand({ title = "Laundry day, done in one stop." }: { title?: 
   return (
     <section className="bg-cream py-14 md:py-20">
       <div className="container-site">
-        <div className="relative overflow-hidden rounded-3xl bg-navy px-6 py-12 text-center text-white md:px-16">
-          <div className="absolute -left-16 -top-16 h-56 w-56 rounded-full bg-aqua/25 blur-2xl" />
-          <div className="absolute -bottom-20 -right-10 h-64 w-64 rounded-full bg-sun/20 blur-2xl" />
+        <div className="relative overflow-hidden rounded-3xl bg-forest px-6 py-12 text-center text-white md:px-16">
+          <div className="absolute -left-16 -top-16 h-56 w-56 rounded-full bg-sky/25 blur-2xl" />
+          <div className="absolute -bottom-20 -right-10 h-64 w-64 rounded-full bg-lime/20 blur-2xl" />
           <h2 className="relative text-3xl font-extrabold text-white md:text-4xl">{title}</h2>
           <p className="relative mx-auto mt-4 max-w-2xl text-lg text-white/85">
             {business.address.street}, {business.address.city} · Open {business.hours.display} · Last wash {business.hours.lastWash}
@@ -173,16 +173,16 @@ export function ServiceCard({ href, icon, title, text, price }: { href: string; 
   return (
     <Link
       href={href}
-      className="group flex flex-col rounded-2xl border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-aqua/50 hover:shadow-lg"
+      className="group flex flex-col rounded-2xl border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-sky/50 hover:shadow-lg"
     >
-      <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-aqua-light text-aqua-dark">
+      <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-light text-sky-dark">
         <Icon name={icon} className="h-7 w-7" />
       </span>
       <h3 className="mt-5 text-xl font-bold">{title}</h3>
       <p className="mt-2 flex-1 leading-relaxed text-ink-soft">{text}</p>
       <div className="mt-5 flex items-center justify-between">
-        {price && <span className="text-sm font-semibold text-navy">{price}</span>}
-        <span className="flex items-center gap-1 text-sm font-semibold text-aqua-dark group-hover:text-navy">
+        {price && <span className="text-sm font-semibold text-forest">{price}</span>}
+        <span className="flex items-center gap-1 text-sm font-semibold text-sky-dark group-hover:text-forest">
           Learn more <Icon name="arrow" className="h-4 w-4" />
         </span>
       </div>
@@ -199,9 +199,9 @@ export function AreaChips({ slugs, className = "" }: { slugs?: string[]; classNa
         <li key={a.slug}>
           <Link
             href={`/service-areas/${a.slug}`}
-            className="inline-flex items-center gap-1.5 rounded-full border border-line bg-white px-4 py-2 text-sm font-medium hover:border-aqua hover:text-aqua-dark"
+            className="inline-flex items-center gap-1.5 rounded-full border border-line bg-white px-4 py-2 text-sm font-medium hover:border-sky hover:text-sky-dark"
           >
-            <Icon name="pin" className="h-4 w-4 text-aqua-dark" /> {a.name}
+            <Icon name="pin" className="h-4 w-4 text-sky-dark" /> {a.name}
           </Link>
         </li>
       ))}
@@ -224,7 +224,7 @@ export function VisitCard() {
         <h2 className="text-2xl font-bold">Visit us on FM 359</h2>
         <ul className="mt-5 space-y-4 text-ink-soft">
           <li className="flex gap-3">
-            <Icon name="pin" className="h-6 w-6 shrink-0 text-aqua-dark" />
+            <Icon name="pin" className="h-6 w-6 shrink-0 text-sky-dark" />
             <span>
               {business.address.street}, {business.address.city}, {business.address.state} {business.address.zip}
               <br />
@@ -232,7 +232,7 @@ export function VisitCard() {
             </span>
           </li>
           <li className="flex gap-3">
-            <Icon name="clock" className="h-6 w-6 shrink-0 text-aqua-dark" />
+            <Icon name="clock" className="h-6 w-6 shrink-0 text-sky-dark" />
             <span>
               {business.hours.display}
               <br />
@@ -240,8 +240,8 @@ export function VisitCard() {
             </span>
           </li>
           <li className="flex gap-3">
-            <Icon name="phone" className="h-6 w-6 shrink-0 text-aqua-dark" />
-            <a href={business.phoneHref} className="font-semibold text-navy hover:text-aqua-dark">{business.phone}</a>
+            <Icon name="phone" className="h-6 w-6 shrink-0 text-sky-dark" />
+            <a href={business.phoneHref} className="font-semibold text-forest hover:text-sky-dark">{business.phone}</a>
           </li>
         </ul>
         <CtaButtons className="mt-7" dark={false} />

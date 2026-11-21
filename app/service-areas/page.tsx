@@ -41,14 +41,14 @@ export default function ServiceAreasPage() {
                   <Link
                     key={a.slug}
                     href={`/service-areas/${a.slug}`}
-                    className="group rounded-2xl border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-aqua/50 hover:shadow-lg"
+                    className="group rounded-2xl border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-sky/50 hover:shadow-lg"
                   >
                     <p className="flex items-center gap-2 text-sm text-ink-soft">
-                      <Icon name="pin" className="h-4 w-4 text-aqua-dark" /> {a.locality}
+                      <Icon name="pin" className="h-4 w-4 text-sky-dark" /> {a.locality}
                     </p>
                     <h3 className="mt-2 text-xl font-bold">{a.name}</h3>
                     <p className="mt-2 line-clamp-3 text-ink-soft">{a.lead}</p>
-                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-aqua-dark group-hover:text-navy">
+                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-sky-dark group-hover:text-forest">
                       View {a.name} page <Icon name="arrow" className="h-4 w-4" />
                     </span>
                   </Link>
@@ -57,11 +57,11 @@ export default function ServiceAreasPage() {
             </div>
           ))}
 
-          <div className="rounded-3xl bg-sun-light p-8">
+          <div className="rounded-3xl bg-lime-light p-8">
             <h2 className="text-2xl font-bold">Want laundry picked up at your door?</h2>
             <p className="mt-3 max-w-3xl text-lg text-ink-soft">
               Brookshire Washateria is a walk-in and drop-off store. Our sister location,{" "}
-              <a href={sister.serviceAreasUrl} className="font-semibold text-navy underline underline-offset-2">
+              <a href={sister.serviceAreasUrl} className="font-semibold text-forest underline underline-offset-2">
                 Fry Washateria & Cleaners
               </a>
               , offers laundry pickup and delivery across Katy and Fulshear neighborhoods.

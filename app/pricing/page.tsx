@@ -35,7 +35,7 @@ export default function PricingPage() {
         <div className="container-site">
           <nav aria-label="Price categories" className="flex flex-wrap gap-2">
             {allPriceGroups.map((g) => (
-              <a key={g.id} href={`#${g.id}`} className="rounded-full border border-line px-4 py-2 text-sm font-medium hover:border-aqua hover:text-aqua-dark">
+              <a key={g.id} href={`#${g.id}`} className="rounded-full border border-line px-4 py-2 text-sm font-medium hover:border-sky hover:text-sky-dark">
                 {g.title}
               </a>
             ))}
@@ -53,13 +53,13 @@ export default function PricingPage() {
                 Prices are posted on each machine and depend on size. Our large-capacity washers fit king comforters and bulky
                 loads. Open 7am–9pm daily, last wash 7:30pm.
               </p>
-              <Link href="/self-service-laundromat-brookshire-tx" className="mt-4 inline-block font-semibold text-aqua-dark hover:text-navy">
+              <Link href="/self-service-laundromat-brookshire-tx" className="mt-4 inline-block font-semibold text-sky-dark hover:text-forest">
                 About our self-serve laundromat →
               </Link>
               <h3 className="mt-8 text-lg font-bold">Alterations</h3>
               <p className="mt-2 text-ink-soft">
                 Alterations are offered at our sister location,{" "}
-                <a href={sister.alterationsUrl} className="font-semibold text-aqua-dark underline underline-offset-2">
+                <a href={sister.alterationsUrl} className="font-semibold text-sky-dark underline underline-offset-2">
                   Fry Washateria & Cleaners
                 </a>{" "}
                 in Katy.

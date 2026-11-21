@@ -65,23 +65,23 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
             <div className="rounded-2xl border border-line bg-cream p-6">
               <p className="font-display text-lg font-bold">Prices at a glance</p>
               <ul className="mt-4 space-y-2 text-ink-soft">
-                <li className="flex justify-between"><span>Wash & fold</span><span className="font-semibold text-navy">$1.50/lb</span></li>
-                <li className="flex justify-between"><span>Comforter (queen)</span><span className="font-semibold text-navy">$25</span></li>
-                <li className="flex justify-between"><span>Dress shirt</span><span className="font-semibold text-navy">$2.25</span></li>
-                <li className="flex justify-between"><span>2-piece suit</span><span className="font-semibold text-navy">$10.50</span></li>
-                <li className="flex justify-between"><span>Pressing</span><span className="font-semibold text-navy">from $2.50</span></li>
+                <li className="flex justify-between"><span>Wash & fold</span><span className="font-semibold text-forest">$1.50/lb</span></li>
+                <li className="flex justify-between"><span>Comforter (queen)</span><span className="font-semibold text-forest">$25</span></li>
+                <li className="flex justify-between"><span>Dress shirt</span><span className="font-semibold text-forest">$2.25</span></li>
+                <li className="flex justify-between"><span>2-piece suit</span><span className="font-semibold text-forest">$10.50</span></li>
+                <li className="flex justify-between"><span>Pressing</span><span className="font-semibold text-forest">from $2.50</span></li>
               </ul>
-              <Link href="/pricing" className="mt-4 inline-block text-sm font-semibold text-aqua-dark hover:text-navy">
+              <Link href="/pricing" className="mt-4 inline-block text-sm font-semibold text-sky-dark hover:text-forest">
                 Full price list →
               </Link>
             </div>
             {area.frySlug && (
-              <div className="rounded-2xl bg-sun-light p-6">
+              <div className="rounded-2xl bg-lime-light p-6">
                 <p className="font-display text-lg font-bold">Prefer pickup?</p>
                 <p className="mt-2 text-ink-soft">
                   Our sister store delivers to {area.name}.
                 </p>
-                <a href={sister.areaUrl(area.frySlug)} className="mt-4 inline-flex items-center gap-1 font-semibold text-navy underline underline-offset-2">
+                <a href={sister.areaUrl(area.frySlug)} className="mt-4 inline-flex items-center gap-1 font-semibold text-forest underline underline-offset-2">
                   Laundry pickup in {area.name} <Icon name="arrow" className="h-4 w-4" />
                 </a>
               </div>

@@ -85,7 +85,7 @@ export default function MoneyPage() {
           <div className="grid gap-5 md:grid-cols-3">
             {items.map((i) => (
               <div key={i.title} className="rounded-2xl border border-line bg-white p-6">
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-aqua-light text-aqua-dark">
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-light text-sky-dark">
                   <Icon name={i.icon} className="h-7 w-7" />
                 </span>
                 <h2 className="mt-5 text-xl font-bold">{i.title}</h2>

@@ -60,13 +60,13 @@ export default function HomePage() {
       <JsonLd data={faqSchema(homeFaqs)} />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-navy text-white">
-        <div className="absolute -right-32 -top-32 h-[28rem] w-[28rem] rounded-full bg-aqua/20 blur-3xl" />
-        <div className="absolute -bottom-40 left-1/3 h-80 w-80 rounded-full bg-sun/10 blur-3xl" />
+      <section className="relative overflow-hidden bg-forest text-white">
+        <div className="absolute -right-32 -top-32 h-[28rem] w-[28rem] rounded-full bg-sky/20 blur-3xl" />
+        <div className="absolute -bottom-40 left-1/3 h-80 w-80 rounded-full bg-lime/10 blur-3xl" />
         <div className="container-site relative grid gap-12 py-14 md:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
           <div>
             <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium ring-1 ring-white/20">
-              <Icon name="clock" className="h-4 w-4 text-sun" /> Open 7am – 9pm, every day
+              <Icon name="clock" className="h-4 w-4 text-lime" /> Open 7am – 9pm, every day
             </p>
             <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] text-white md:text-6xl">
               Laundromat, Wash & Fold and Dry Cleaners in Brookshire, TX
@@ -79,7 +79,7 @@ export default function HomePage() {
             <ul className="mt-8 grid max-w-xl grid-cols-2 gap-3 text-sm text-white/85">
               {["Same-day wash & fold", "Next-day dry cleaning", "Large-capacity washers", "Se habla español"].map((t) => (
                 <li key={t} className="flex items-center gap-2">
-                  <Icon name="check" className="h-5 w-5 text-sun" /> {t}
+                  <Icon name="check" className="h-5 w-5 text-lime" /> {t}
                 </li>
               ))}
             </ul>
@@ -98,28 +98,28 @@ export default function HomePage() {
       <section className="border-b border-line bg-white">
         <div className="container-site grid grid-cols-2 gap-6 py-8 md:grid-cols-4">
           <a href={business.social.google} className="flex items-center gap-3">
-            <Icon name="star" className="h-8 w-8 shrink-0 text-sun" />
+            <Icon name="star" className="h-8 w-8 shrink-0 text-lime" />
             <span className="text-sm">
               <span className="block font-bold text-ink">{business.stats.googleReviewCount}+ Google reviews</span>
               <span className="text-ink-soft">Read what neighbors say</span>
             </span>
           </a>
           <div className="flex items-center gap-3">
-            <Icon name="basket" className="h-8 w-8 text-aqua-dark" />
+            <Icon name="basket" className="h-8 w-8 text-sky-dark" />
             <span className="text-sm">
               <span className="block font-bold text-ink">{business.stats.itemsCleaned} items</span>
               <span className="text-ink-soft">cleaned and counting</span>
             </span>
           </div>
           <div className="flex items-center gap-3">
-            <Icon name="wifi" className="h-8 w-8 text-aqua-dark" />
+            <Icon name="wifi" className="h-8 w-8 text-sky-dark" />
             <span className="text-sm">
               <span className="block font-bold text-ink">Free Wi-Fi</span>
               <span className="text-ink-soft">and $1 vending</span>
             </span>
           </div>
           <div className="flex items-center gap-3">
-            <Icon name="shield" className="h-8 w-8 text-aqua-dark" />
+            <Icon name="shield" className="h-8 w-8 text-sky-dark" />
             <span className="text-sm">
               <span className="block font-bold text-ink">Safe, lit parking</span>
               <span className="text-ink-soft">24/7 cameras</span>
@@ -132,7 +132,7 @@ export default function HomePage() {
       <section className="bg-cream py-16 md:py-24">
         <div className="container-site">
           <div className="max-w-2xl">
-            <p className="font-semibold text-aqua-dark">Services</p>
+            <p className="font-semibold text-sky-dark">Services</p>
             <h2 className="mt-2 text-3xl font-bold md:text-4xl">Everything your laundry needs, in one stop</h2>
             <p className="mt-4 text-lg text-ink-soft">
               Do it yourself in our machines, or drop it off and let us handle it. Either way, you're in and out fast.
@@ -151,7 +151,7 @@ export default function HomePage() {
         <div className="container-site grid gap-12 lg:grid-cols-2 lg:items-center">
           <SmartImage file="money-counter.jpg" alt="Money transfer and bill pay counter inside Brookshire Washateria" icon="money" className="aspect-[4/3] rounded-3xl" />
           <div>
-            <p className="font-semibold text-aqua-dark">More than laundry</p>
+            <p className="font-semibold text-sky-dark">More than laundry</p>
             <h2 className="mt-2 text-3xl font-bold md:text-4xl">Send money and pay bills while the dryer runs</h2>
             <p className="mt-4 text-lg leading-relaxed text-ink-soft">
               Our counter offers RIA money transfer, bill payments and prepaid phone refills, so you can take care of errands
@@ -160,7 +160,7 @@ export default function HomePage() {
             <ul className="mt-6 space-y-3">
               {["RIA money transfer", "Bill pay", "Prepaid phone refills"].map((t) => (
                 <li key={t} className="flex items-center gap-3 font-medium">
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-aqua-light text-aqua-dark">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-sky-light text-sky-dark">
                     <Icon name="check" className="h-5 w-5" />
                   </span>
                   {t}
@@ -175,11 +175,11 @@ export default function HomePage() {
       </section>
 
       {/* Price highlights */}
-      <section className="bg-navy-deep py-16 text-white md:py-20">
+      <section className="bg-forest-deep py-16 text-white md:py-20">
         <div className="container-site">
           <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
-              <p className="font-semibold text-sun">Simple, posted prices</p>
+              <p className="font-semibold text-lime">Simple, posted prices</p>
               <h2 className="mt-2 text-3xl font-bold text-white md:text-4xl">Popular prices</h2>
             </div>
             <Link href="/pricing" className="btn-secondary self-start">
@@ -207,7 +207,7 @@ export default function HomePage() {
       <section className="py-16 md:py-24">
         <div className="container-site">
           <div className="max-w-2xl">
-            <p className="font-semibold text-aqua-dark">Areas we serve</p>
+            <p className="font-semibold text-sky-dark">Areas we serve</p>
             <h2 className="mt-2 text-3xl font-bold md:text-4xl">Your laundromat between Brookshire and Fulshear</h2>
             <p className="mt-4 text-lg text-ink-soft">
               We're on FM 359, the road that connects Brookshire and Fulshear, a short drive from {tier1.map((a) => a.name).slice(0, 4).join(", ")} and
@@ -215,7 +215,7 @@ export default function HomePage() {
             </p>
           </div>
           <AreaChips className="mt-8" />
-          <Link href="/service-areas" className="mt-8 inline-flex items-center gap-1 font-semibold text-aqua-dark hover:text-navy">
+          <Link href="/service-areas" className="mt-8 inline-flex items-center gap-1 font-semibold text-sky-dark hover:text-forest">
             View all service areas <Icon name="arrow" className="h-4 w-4" />
           </Link>
         </div>
@@ -224,11 +224,11 @@ export default function HomePage() {
       {/* Sister location */}
       <section className="pb-4">
         <div className="container-site">
-          <div className="grid gap-6 rounded-3xl bg-sun-light p-8 md:grid-cols-[1fr_auto] md:items-center md:p-10">
+          <div className="grid gap-6 rounded-3xl bg-lime-light p-8 md:grid-cols-[1fr_auto] md:items-center md:p-10">
             <div>
               <h2 className="text-2xl font-bold md:text-3xl">Need pickup & delivery or alterations?</h2>
               <p className="mt-3 max-w-2xl text-lg text-ink-soft">
-                Our sister store, <a href={sister.url} className="font-semibold text-navy underline underline-offset-2">Fry Washateria & Cleaners</a>{" "}
+                Our sister store, <a href={sister.url} className="font-semibold text-forest underline underline-offset-2">Fry Washateria & Cleaners</a>{" "}
                 on North Fry Road in Katy, picks up and delivers laundry across Katy and Fulshear and offers in-house alterations.
               </p>
             </div>

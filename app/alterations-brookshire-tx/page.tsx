@@ -38,15 +38,15 @@ export default function AlterationsPage() {
     <>
       <JsonLd data={[faqSchema(faqs), breadcrumbSchema([{ name: "Alterations", path }])]} />
 
-      <section className="relative overflow-hidden bg-navy text-white">
-        <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-aqua/20 blur-2xl" />
+      <section className="relative overflow-hidden bg-forest text-white">
+        <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-sky/20 blur-2xl" />
         <div className="container-site relative grid gap-10 py-12 md:py-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <Breadcrumbs items={[{ name: "Alterations" }]} />
             <h1 className="mt-5 text-3xl font-extrabold leading-tight text-white md:text-5xl">Alterations Near Brookshire, TX</h1>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/85">
               We currently offer alterations at our sister location,{" "}
-              <a href={sister.url} className="font-semibold text-sun underline underline-offset-2">
+              <a href={sister.url} className="font-semibold text-lime underline underline-offset-2">
                 Fry Washateria & Cleaners
               </a>
               , at {sister.address}. Hems, buttons, badges and repairs are handled there in house.

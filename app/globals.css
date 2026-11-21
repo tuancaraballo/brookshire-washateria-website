@@ -4,17 +4,18 @@
   --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Plus Jakarta Sans Variable", ui-sans-serif, system-ui, sans-serif;
 
-  --color-ink: #0e2235;
-  --color-ink-soft: #3d5266;
-  --color-navy: #0f2f4d;
-  --color-navy-deep: #0a2238;
-  --color-aqua: #11a3b5;
-  --color-aqua-dark: #0b7f8e;
-  --color-aqua-light: #e3f6f8;
-  --color-sun: #f4b63f;
-  --color-sun-light: #fff4dc;
-  --color-cream: #f8f6f1;
-  --color-line: #e3e1da;
+  --color-ink: #13261b;
+  --color-ink-soft: #44584b;
+  /* Brand palette, matched to the logo: blue #1082CE, green #80CC28, light blue #94DCF6 */
+  --color-forest: #17592c;
+  --color-forest-deep: #0e3b1c;
+  --color-sky: #1082ce;
+  --color-sky-dark: #0b67a6;
+  --color-sky-light: #e8f4fc;
+  --color-lime: #80cc28;
+  --color-lime-light: #eff8e3;
+  --color-cream: #f5f9f0;
+  --color-line: #e0e7da;
 }
 
 @layer base {
@@ -49,7 +50,7 @@ h4 {
   @apply list-decimal pl-6 mb-4 text-ink-soft space-y-1.5;
 }
 .prose-local a {
-  @apply text-aqua-dark underline underline-offset-2 hover:text-navy;
+  @apply text-sky-dark underline underline-offset-2 hover:text-forest;
 }
 .prose-local strong {
   @apply text-ink font-semibold;
@@ -57,19 +58,19 @@ h4 {
 }
 
 @utility btn {
-  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-aqua;
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky;
 }
 @utility btn-primary {
-  @apply btn bg-sun text-navy-deep hover:bg-[#e9a72a];
+  @apply btn bg-lime text-forest-deep hover:bg-[#71b81f];
 }
 @utility btn-secondary {
   @apply btn bg-white/10 text-white ring-1 ring-white/40 hover:bg-white/20;
 }
 @utility btn-outline {
-  @apply btn bg-white text-navy ring-1 ring-navy/20 hover:ring-navy/50;
+  @apply btn bg-white text-forest ring-1 ring-forest/20 hover:ring-forest/50;
 }
 @utility btn-dark {
-  @apply btn bg-navy text-white hover:bg-navy-deep;
+  @apply btn bg-forest text-white hover:bg-forest-deep;
 }
 
 @utility container-site {

@@ -17,13 +17,13 @@ export default function BlogIndex() {
       <section className="py-14 md:py-20">
         <div className="container-site grid gap-6 md:grid-cols-2">
           {posts.map((p) => (
-            <Link key={p.slug} href={`/blog/${p.slug}`} className="group rounded-2xl border border-line bg-white p-7 transition hover:border-aqua/50 hover:shadow-lg">
+            <Link key={p.slug} href={`/blog/${p.slug}`} className="group rounded-2xl border border-line bg-white p-7 transition hover:border-sky/50 hover:shadow-lg">
               <time dateTime={p.date} className="text-sm text-ink-soft">
                 {new Date(p.date + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
               </time>
-              <h2 className="mt-2 text-2xl font-bold group-hover:text-aqua-dark">{p.title}</h2>
+              <h2 className="mt-2 text-2xl font-bold group-hover:text-sky-dark">{p.title}</h2>
               <p className="mt-3 text-ink-soft">{p.excerpt}</p>
-              <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-aqua-dark">
+              <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-sky-dark">
                 Read more <Icon name="arrow" className="h-4 w-4" />
               </span>
             </Link>

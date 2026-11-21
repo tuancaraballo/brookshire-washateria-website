@@ -31,11 +31,11 @@ export default function SmartImage({ file, alt, icon = "washer", className = "",
     <div
       role="img"
       aria-label={alt}
-      className={`relative flex items-center justify-center overflow-hidden bg-gradient-to-br from-aqua-light via-white to-sun-light ${className}`}
+      className={`relative flex items-center justify-center overflow-hidden bg-gradient-to-br from-sky-light via-white to-lime-light ${className}`}
     >
-      <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-aqua/10" />
-      <div className="absolute -bottom-12 -left-8 h-48 w-48 rounded-full bg-sun/15" />
-      <Icon name={icon} className="relative h-20 w-20 text-aqua-dark/60" />
+      <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-sky/10" />
+      <div className="absolute -bottom-12 -left-8 h-48 w-48 rounded-full bg-lime/15" />
+      <Icon name={icon} className="relative h-20 w-20 text-sky-dark/60" />
     </div>
   );
 }
