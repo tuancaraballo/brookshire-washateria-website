@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Icon from "./Icon";
 import { business, directionsUrl, sister } from "@/data/business";
@@ -6,12 +7,12 @@ import { areas } from "@/data/areas";
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-deep text-white/80">
+    <footer className="bg-forest-deep text-white/80">
       <div className="border-b border-white/10">
         <div className="container-site flex flex-col items-start justify-between gap-4 py-8 md:flex-row md:items-center">
           <p className="max-w-2xl text-white">
             <span className="font-semibold">Need pickup & delivery or alterations?</span> Visit our sister store,{" "}
-            <a href={sister.url} className="font-semibold text-sun underline underline-offset-2 hover:text-white">
+            <a href={sister.url} className="font-semibold text-lime underline underline-offset-2 hover:text-white">
               Fry Washateria & Cleaners
             </a>{" "}
             in Katy, for laundry pickup and delivery across Katy and Fulshear and in-house alterations.
@@ -24,14 +25,24 @@ export default function Footer() {
 
       <div className="container-site grid gap-10 py-12 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <p className="font-display text-xl font-bold text-white">{business.name}</p>
-          <address className="mt-4 not-italic leading-relaxed">
+          <Link href="/" aria-label={`${business.name} home`} className="inline-block">
+            <Image
+              src="/images/logo-horizontal-white.png"
+              alt={business.name}
+              width={1169}
+              height={300}
+              sizes="250px"
+              className="h-16 w-auto"
+            />
+          </Link>
+          <p className="mt-5 font-semibold text-white">{business.name}</p>
+          <address className="mt-1 not-italic leading-relaxed">
             {business.address.street}
             <br />
             {business.address.city}, {business.address.state} {business.address.zip}
           </address>
           <p className="mt-3">
-            <a href={business.phoneHref} className="font-semibold text-white hover:text-sun">
+            <a href={business.phoneHref} className="font-semibold text-white hover:text-lime">
               {business.phone}
             </a>
           </p>
@@ -45,7 +56,7 @@ export default function Footer() {
             <br />
             Last wash {business.hours.lastWash}
           </p>
-          <a href={directionsUrl} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-sun hover:text-white">
+          <a href={directionsUrl} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-lime hover:text-white">
             <Icon name="pin" className="h-4 w-4" /> Get directions
           </a>
         </div>
