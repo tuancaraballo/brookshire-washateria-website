@@ -117,7 +117,7 @@ export const services: Service[] = [
     lead:
       "Drop off your laundry in the morning and pick it up clean, dried and neatly folded the same day. Wash & fold is $1.50 per pound with no sign-up and no subscription.",
     highlights: ["$1.50/lb", "Same-day service", "Folded and bagged", "No sign-up needed"],
-    image: { file: "wash-fold-stack.jpg", alt: "Neatly folded towels and clothes ready for pickup at Brookshire Washateria" },
+    image: { file: "wash-fold-stack.jpg", alt: "Wash and fold order bagged and ready for pickup next to a stack of folded clothes and towels at Brookshire Washateria" },
     sections: [
       {
         heading: "How drop-off laundry works",
