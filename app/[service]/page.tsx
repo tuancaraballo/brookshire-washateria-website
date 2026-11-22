@@ -3,7 +3,7 @@ import Link from "next/link";
 import SmartImage from "@/components/SmartImage";
 import JsonLd from "@/components/JsonLd";
 import Icon from "@/components/Icon";
-import { AreaChips, ContentBody, CtaBand, FaqList, MachineGallery, PageHero, PriceTable, ServiceCard } from "@/components/blocks";
+import { AreaChips, ContentBody, CtaBand, FaqList, MachineGallery, PhotoStrip, PageHero, PriceTable, ServiceCard } from "@/components/blocks";
 import { dryers, washers } from "@/data/machines";
 import { getService, services } from "@/data/services";
 import { business } from "@/data/business";
@@ -90,6 +90,7 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
       </section>
 
       {service.showMachines && <MachineGallery washers={washers} dryers={dryers} />}
+      {service.gallery && <PhotoStrip {...service.gallery} />}
 
       <FaqList faqs={service.faqs} title={`${service.name} FAQs`} />
 

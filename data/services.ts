@@ -22,6 +22,7 @@ export type Service = {
   sections: ContentSection[];
   priceGroups: PriceGroup[];
   showMachines?: boolean; // machine photo gallery (self-serve page)
+  gallery?: { title: string; intro?: string; images: { file: string; alt: string; portrait?: boolean; crop?: "top" | "bottom" }[] };
   faqs: Faq[];
   areaSlugs: string[]; // neighborhoods to link to
   schemaServiceType: string;
@@ -144,6 +145,15 @@ export const services: Service[] = [
       },
     ],
     priceGroups: [washFold],
+    gallery: {
+      title: "Real orders from our store",
+      intro: "Every order is washed, dried, folded by hand and bagged at our counter on FM 359. These are actual customer orders, ready for pickup.",
+      images: [
+        { file: "wash-fold-real-stacks.jpg", alt: "A finished wash and fold order: jeans, shirts and sweaters folded in neat stacks with socks rolled, on the folding counter at Brookshire Washateria" },
+        { file: "wash-fold-real-shirts.jpg", alt: "Folded towels, shirts and jeans from a wash and fold order at Brookshire Washateria", portrait: true, crop: "bottom" },
+        { file: "wash-fold-real-bag.jpg", alt: "Wash and fold order bagged and tagged for pickup in front of the detergent shelf at Brookshire Washateria", portrait: true },
+      ],
+    },
     faqs: [
       { q: "How much is wash and fold?", a: "$1.50 per pound, weighed at drop-off. Folding only is $1.00 per pound and hangers are $1 each." },
       {

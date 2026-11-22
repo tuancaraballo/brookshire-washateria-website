@@ -14,15 +14,16 @@ type Props = {
   className?: string;
   priority?: boolean;
   sizes?: string;
+  imgClassName?: string; // e.g. "object-bottom" to change the crop
 };
 
-export default function SmartImage({ file, alt, icon = "washer", className = "", priority, sizes = "(min-width: 768px) 50vw, 100vw" }: Props) {
+export default function SmartImage({ file, alt, icon = "washer", className = "", priority, sizes = "(min-width: 768px) 50vw, 100vw", imgClassName = "" }: Props) {
   const exists = fs.existsSync(path.join(process.cwd(), "public", "images", file));
 
   if (exists) {
     return (
       <div className={`relative overflow-hidden ${className}`}>
-        <Image src={`/images/${file}`} alt={alt} fill priority={priority} sizes={sizes} className="object-cover" />
+        <Image src={`/images/${file}`} alt={alt} fill priority={priority} sizes={sizes} className={`object-cover ${imgClassName}`} />
       </div>
     );
   }

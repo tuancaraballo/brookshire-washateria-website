@@ -321,3 +321,28 @@ export function MachineGallery({ washers, dryers }: { washers: Machine[]; dryers
     </section>
   );
 }
+
+/* ---------- Photo strip (real store photos) ---------- */
+export function PhotoStrip({ title, intro, images }: NonNullable<Service["gallery"]>) {
+  return (
+    <section className="bg-cream py-14 md:py-20">
+      <div className="container-site">
+        <h2 className="text-2xl font-bold md:text-3xl">{title}</h2>
+        {intro && <p className="mt-3 max-w-2xl text-ink-soft">{intro}</p>}
+        <div className="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-[1.78fr_1fr_1fr]">
+          {images.map((img) => (
+            <SmartImage
+              key={img.file}
+              file={img.file}
+              alt={img.alt}
+              icon="basket"
+              imgClassName={img.crop === "bottom" ? "object-bottom" : img.crop === "top" ? "object-top" : ""}
+              className={`rounded-2xl ${img.portrait ? "aspect-[3/4] lg:aspect-auto lg:h-[340px]" : "col-span-2 aspect-[4/3] lg:col-span-1 lg:aspect-auto lg:h-[340px]"}`}
+              sizes={img.portrait ? "(min-width: 1024px) 240px, 50vw" : "(min-width: 1024px) 430px, 100vw"}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
