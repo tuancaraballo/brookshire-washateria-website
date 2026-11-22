@@ -28,7 +28,7 @@ export default function ServiceAreasPage() {
         lead="We're on FM 359 just south of I-10, the road that links Brookshire and Fulshear. Neighbors from these communities drop off laundry, dry cleaning and comforters with us, or wash in our big machines 7am to 9pm every day."
         crumbs={[{ name: "Service Areas" }]}
       >
-        <SmartImage file="service-area-map.jpg" alt="Map of Brookshire, Fulshear and west Katy communities served by Brookshire Washateria" icon="pin" priority className="hidden aspect-[16/10] rounded-3xl ring-1 ring-white/20 lg:flex" sizes="40vw" />
+        <SmartImage file="service-area-map.jpg" alt="Welcome signs for Brookshire, Fulshear and Katy, the communities served by Brookshire Washateria" icon="pin" priority className="hidden aspect-[4/3] rounded-3xl ring-1 ring-white/20 lg:flex" sizes="40vw" />
       </PageHero>
 
       <section className="py-14 md:py-20">
