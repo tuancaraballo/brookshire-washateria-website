@@ -326,7 +326,7 @@ export const services: Service[] = [
     lead:
       "Skip the ironing board. Bring clean clothes and we'll press them crisp, from $2.50 for a shirt or blouse. Delicate pieces get careful hand ironing (planchado a mano) for $3.50.",
     highlights: ["Shirts from $2.50", "Hand ironing $3.50", "Express available", "Se habla español"],
-    image: { file: "ironing-press.jpg", alt: "Professional steam pressing of a white dress shirt at Brookshire Washateria" },
+    image: { file: "ironing-press.jpg", alt: "Crisply pressed dress shirts folded and on a hanger next to a steam iron at Brookshire Washateria" },
     sections: [
       {
         heading: "Pressing or hand ironing?",
