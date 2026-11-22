@@ -374,7 +374,7 @@ export const services: Service[] = [
     lead:
       "Area rugs, bath mats, pet beds and patio cushion covers are too big or too dirty for a home washer. Drop them off and we'll clean them in our large-capacity machines.",
     highlights: ["Bath rugs from $4", "Pet beds from $15", "Area rugs from $25", "Patio covers $20"],
-    image: { file: "bulky-items.jpg", alt: "Clean pet bed, rolled area rug and sleeping bag ready for pickup" },
+    image: { file: "bulky-items.jpg", alt: "Clean rolled rug, pet bed and folded blankets on the counter at Brookshire Washateria" },
     sections: [
       {
         heading: "What we clean",
