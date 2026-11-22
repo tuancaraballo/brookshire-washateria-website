@@ -188,7 +188,7 @@ export const services: Service[] = [
     lead:
       "Home washers are too small for most comforters. We clean queen and king comforters, duvets, blankets, pillows and mattress covers in large-capacity machines, then dry them all the way through so they come back fluffy and fresh.",
     highlights: ["Washed from $25", "Dry cleaned from $20", "King & extra-heavy sizes", "Pillows & mattress covers too"],
-    image: { file: "comforter-hero.jpg", alt: "Freshly cleaned white king comforter folded and wrapped at Brookshire Washateria" },
+    image: { file: "comforter-hero.jpg", alt: "Freshly cleaned white comforter, pillows and folded blanket on the counter at Brookshire Washateria" },
     sections: [
       {
         heading: "Washed or dry cleaned: which is right?",

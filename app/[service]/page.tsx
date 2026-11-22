@@ -43,7 +43,7 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
           alt={service.image.alt}
           icon={service.icon}
           priority
-          className="hidden aspect-[4/3] rounded-3xl ring-1 ring-white/20 lg:block"
+          className="hidden aspect-[4/3] rounded-3xl ring-1 ring-white/20 lg:flex"
           sizes="40vw"
         />
       </PageHero>

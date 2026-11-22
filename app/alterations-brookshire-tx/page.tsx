@@ -60,7 +60,7 @@ export default function AlterationsPage() {
               </a>
             </div>
           </div>
-          <SmartImage file="alterations-sister.jpg" alt="Seamstress hemming pants at Fry Washateria & Cleaners in Katy" icon="needle" priority className="hidden aspect-[4/3] rounded-3xl ring-1 ring-white/20 lg:block" sizes="40vw" />
+          <SmartImage file="alterations-sister.jpg" alt="Seamstress hemming pants at Fry Washateria & Cleaners in Katy" icon="needle" priority className="hidden aspect-[4/3] rounded-3xl ring-1 ring-white/20 lg:flex" sizes="40vw" />
         </div>
       </section>
 

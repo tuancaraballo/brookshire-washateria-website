@@ -77,7 +77,7 @@ export default function MoneyPage() {
         crumbs={[{ name: "Money Transfer & Bill Pay" }]}
         highlights={["RIA money transfer", "Bill pay", "Phone refills", "Se habla español"]}
       >
-        <SmartImage file="money-counter.jpg" alt="Service counter for RIA money transfer and bill pay at Brookshire Washateria" icon="money" priority className="hidden aspect-[4/3] rounded-3xl ring-1 ring-white/20 lg:block" sizes="40vw" />
+        <SmartImage file="money-counter.jpg" alt="Service counter for RIA money transfer and bill pay at Brookshire Washateria" icon="money" priority className="hidden aspect-[4/3] rounded-3xl ring-1 ring-white/20 lg:flex" sizes="40vw" />
       </PageHero>
 
       <section className="py-14 md:py-20">
