@@ -7,7 +7,8 @@ export type PriceItem = {
   regular: number;
   express?: number;
   unit?: "lb" | "item" | "piece";
-  note?: string;
+  priceLabel?: string; // overrides the formatted price, e.g. "$0.25 / 7 min"
+  note?: string; // small secondary line under the item name
 };
 
 export type PriceGroup = {
@@ -22,6 +23,26 @@ export const PRICES_UPDATED = "November 2026";
 
 // Wording shown next to the Express column. TODO: confirm express turnaround with the owner.
 export const EXPRESS_NOTE = "Express = rush service. Ask at the counter for today's express turnaround.";
+
+// Self-serve machine prices (owner, Nov 2026). Machine photos live in data/machines.ts.
+export const selfServe: PriceGroup = {
+  id: "self-serve",
+  title: "Self-serve washers & dryers",
+  description: "Pick the washer size that fits your load. Dryers are shared by all washer sizes.",
+  items: [
+    { name: "20 lb washer (2 loads)", es: "Lavadora de 20 lb", regular: 3.75 },
+    { name: "30 lb washer (3 loads)", es: "Lavadora de 30 lb", regular: 4.75 },
+    { name: "40 lb washer (4 loads)", es: "Lavadora de 40 lb", regular: 5.75 },
+    { name: "60 lb washer (6 loads, large capacity)", es: "Lavadora de 60 lb", regular: 6.75 },
+    {
+      name: "Dryers",
+      es: "Secadoras",
+      regular: 0.25,
+      priceLabel: "$0.25 / 7 min",
+      note: "A full 35-minute cycle (about $1.25) dries most loads",
+    },
+  ],
+};
 
 export const washFold: PriceGroup = {
   id: "wash-fold",
@@ -150,6 +171,7 @@ export const ironing: PriceGroup = {
 };
 
 export const allPriceGroups: PriceGroup[] = [
+  selfServe,
   washFold,
   comfortersWash,
   comfortersDryClean,
@@ -158,7 +180,8 @@ export const allPriceGroups: PriceGroup[] = [
   ironing,
 ];
 
-export function formatPrice(item: Pick<PriceItem, "regular" | "unit">, value = item.regular): string {
+export function formatPrice(item: Pick<PriceItem, "regular" | "unit" | "priceLabel">, value = item.regular): string {
+  if (item.priceLabel && value === item.regular) return item.priceLabel;
   const amount = `$${value.toFixed(2)}`;
   return item.unit === "lb" ? `${amount}/lb` : amount;
 }

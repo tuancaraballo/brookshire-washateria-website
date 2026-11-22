@@ -65,6 +65,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
             <div className="rounded-2xl border border-line bg-cream p-6">
               <p className="font-display text-lg font-bold">Prices at a glance</p>
               <ul className="mt-4 space-y-2 text-ink-soft">
+                <li className="flex justify-between"><span>Self-serve washers</span><span className="font-semibold text-forest">from $3.75</span></li>
                 <li className="flex justify-between"><span>Wash & fold</span><span className="font-semibold text-forest">$1.50/lb</span></li>
                 <li className="flex justify-between"><span>Comforter (queen)</span><span className="font-semibold text-forest">$25</span></li>
                 <li className="flex justify-between"><span>Dress shirt</span><span className="font-semibold text-forest">$2.25</span></li>

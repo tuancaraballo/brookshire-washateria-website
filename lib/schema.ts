@@ -93,7 +93,7 @@ export function serviceSchema(service: Pick<Service, "name" | "schemaServiceType
   const offers = groups.flatMap((g) =>
     g.items.slice(0, 12).map((item) => ({
       "@type": "Offer",
-      name: item.name,
+      name: item.priceLabel ? `${item.name} (${item.priceLabel})` : item.name,
       price: item.regular.toFixed(2),
       priceCurrency: "USD",
       ...(item.unit === "lb"

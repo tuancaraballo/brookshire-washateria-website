@@ -1,5 +1,5 @@
 import type { PriceGroup } from "./pricing";
-import { bulky, comfortersDryClean, comfortersWash, dryCleaning, ironing, washFold } from "./pricing";
+import { bulky, comfortersDryClean, comfortersWash, dryCleaning, ironing, selfServe, washFold } from "./pricing";
 
 export type Faq = { q: string; a: string };
 
@@ -21,6 +21,7 @@ export type Service = {
   image: { file: string; alt: string };
   sections: ContentSection[];
   priceGroups: PriceGroup[];
+  showMachines?: boolean; // machine photo gallery (self-serve page)
   faqs: Faq[];
   areaSlugs: string[]; // neighborhoods to link to
   schemaServiceType: string;
@@ -34,24 +35,24 @@ export const services: Service[] = [
     h1: "Self-Serve Laundromat in Brookshire, TX",
     metaTitle: "Self-Serve Laundromat in Brookshire, TX | Big Washers, Open 7–9",
     metaDescription:
-      "Clean, attended self-service laundromat on FM 359 in Brookshire. Large-capacity washers for comforters, free Wi-Fi, safe parking. Open 7am–9pm daily, last wash 7:30pm.",
+      "Clean, attended self-service laundromat on FM 359 in Brookshire. Washers from $3.75, 60 lb machines for comforters, dryers 25¢ per 7 min. Open 7am–9pm daily.",
     lead:
       "Wash at your own pace in a clean, attended laundromat on FM 359. We're open 7am to 9pm every day (last wash at 7:30pm), with large-capacity machines that fit a week of family laundry or a king comforter in one load.",
-    highlights: ["Open 7am–9pm, 7 days", "Large-capacity washers", "Free Wi-Fi", "Attendant on site"],
-    image: { file: "self-serve-washers.jpg", alt: "Rows of large front-load washers at Brookshire Washateria on FM 359" },
+    highlights: ["Washers from $3.75", "Dryers 25¢ / 7 min", "Open 7am–9pm, 7 days", "Free Wi-Fi"],
+    image: { file: "self-serve-washers.jpg", alt: "Row of Huebsch front-load washers inside Brookshire Washateria on FM 359" },
     sections: [
       {
         heading: "A laundromat that's easy to use",
         paragraphs: [
           "Brookshire Washateria is a neighborhood laundromat for Brookshire, Fulshear, Sunterra, Jordan Ranch and the west Katy area. Bring your laundry, pick your machines and be done in about an hour.",
-          "Our attendant keeps the store clean, the machines running and can help if you have a question. Prices are posted on every machine.",
+          "Our attendant keeps the store clean, the machines running and can help if you have a question. Washers run from $3.75 for a 20 lb machine to $6.75 for our 60 lb large-capacity washers, and dryers are 25¢ for 7 minutes.",
         ],
       },
       {
         heading: "What you'll find inside",
         bullets: [
-          "Washers in several sizes, including large-capacity machines for bedding, rugs and big family loads",
-          "A wall of dryers so you're never waiting for one",
+          "Huebsch washers in four sizes: 20, 30, 40 and 60 lb, including large-capacity machines for bedding, rugs and big family loads",
+          "A wall of regular and large-capacity stacked dryers so you're rarely waiting for one",
           "Folding tables and laundry carts",
           "Detergent, softener, bleach, dryer sheets and bags for sale at the counter",
           "Free high-speed Wi-Fi and $1 vending drinks and snacks",
@@ -74,7 +75,8 @@ export const services: Service[] = [
         ],
       },
     ],
-    priceGroups: [],
+    priceGroups: [selfServe],
+    showMachines: true,
     faqs: [
       {
         q: "What are your laundromat hours?",
@@ -82,11 +84,11 @@ export const services: Service[] = [
       },
       {
         q: "How much do the washers and dryers cost?",
-        a: "Prices depend on machine size and are posted on each machine. Large-capacity washers cost more per load but hold much more, so big loads are often cheaper in one machine.",
+        a: "Washers are $3.75 for 20 lb (2 loads), $4.75 for 30 lb (3 loads), $5.75 for 40 lb (4 loads) and $6.75 for our 60 lb large-capacity machines (6 loads). Dryers are $0.25 for 7 minutes; a full 35-minute cycle is about $1.25 and dries most loads.",
       },
       {
         q: "Can I wash a king comforter in your machines?",
-        a: "Yes. Our large-capacity washers fit king comforters, sleeping bags and small rugs. If you'd rather not wait, we'll clean it for you starting at $25.",
+        a: "Yes. Our 60 lb large-capacity washers ($6.75) fit king comforters, sleeping bags and small rugs. If you'd rather not wait, we'll clean it for you starting at $25.",
       },
       {
         q: "Do you sell detergent?",

@@ -4,6 +4,8 @@ import { business, directionsUrl, mapEmbedUrl } from "@/data/business";
 import { EXPRESS_NOTE, formatPrice, type PriceGroup } from "@/data/pricing";
 import type { Faq, Service } from "@/data/services";
 import { areas } from "@/data/areas";
+import type { Machine, dryers as dryersData } from "@/data/machines";
+import SmartImage from "./SmartImage";
 
 /* ---------- Breadcrumbs ---------- */
 export function Breadcrumbs({ items }: { items: { name: string; path?: string }[] }) {
@@ -102,6 +104,7 @@ export function PriceTable({ group, compact = false }: { group: PriceGroup; comp
               <th scope="row" className="px-5 py-3 font-medium">
                 {item.name}
                 {item.es && <span className="block text-xs font-normal text-ink-soft" lang="es">{item.es}</span>}
+                {item.note && <span className="block text-xs font-normal text-ink-soft">{item.note}</span>}
               </th>
               <td className="whitespace-nowrap px-5 py-3 text-right font-semibold text-forest">{formatPrice(item)}</td>
               {group.showExpress && (
@@ -273,4 +276,48 @@ export function ContentBody({ sections }: { sections: { heading: string; paragra
 
 export function serviceCardText(s: Service) {
   return s.lead.split(". ")[0] + ".";
+}
+
+/* ---------- Self-serve machines ---------- */
+export function MachineGallery({ washers, dryers }: { washers: Machine[]; dryers: typeof dryersData }) {
+  return (
+    <section className="bg-cream py-14 md:py-20" id="machines">
+      <div className="container-site">
+        <p className="font-semibold text-sky-dark">Our machines</p>
+        <h2 className="mt-2 text-2xl font-bold md:text-3xl">Washer sizes and prices</h2>
+        <p className="mt-3 max-w-2xl text-ink-soft">
+          All Huebsch commercial machines. Pick the size that fits your load: one big washer is often cheaper than two small ones.
+        </p>
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {washers.map((m) => (
+            <figure key={m.name} className="overflow-hidden rounded-2xl border border-line bg-white">
+              <SmartImage file={m.image.file} alt={m.image.alt} icon="washer" className="aspect-[4/3]" sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" />
+              <figcaption className="p-5">
+                <div className="flex items-baseline justify-between gap-3">
+                  <p className="font-display text-lg font-bold">{m.name}</p>
+                  <p className="font-display text-2xl font-extrabold text-forest">{m.price}</p>
+                </div>
+                <p className="text-sm font-medium text-sky-dark">{m.capacity}</p>
+                <p className="mt-2 text-sm text-ink-soft">{m.bestFor}</p>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+
+        <div className="mt-12 grid items-center gap-8 lg:grid-cols-[1fr_1.4fr]">
+          <div>
+            <h2 className="text-2xl font-bold md:text-3xl">Dryers</h2>
+            <p className="mt-3 font-display text-3xl font-extrabold text-forest">{dryers.price}</p>
+            <p className="mt-2 text-ink-soft">{dryers.typical}</p>
+            <p className="mt-2 text-ink-soft">Regular and large-capacity stacked dryers, so you&apos;re rarely waiting for one.</p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {dryers.images.map((img) => (
+              <SmartImage key={img.file} file={img.file} alt={img.alt} icon="washer" className="aspect-[4/3] rounded-2xl" sizes="(min-width: 1024px) 30vw, 50vw" />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

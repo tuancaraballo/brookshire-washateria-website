@@ -18,7 +18,7 @@ export const metadata = pageMeta({
 });
 
 const cardPrices: Record<string, string> = {
-  "self-service-laundromat-brookshire-tx": "Open 7am–9pm",
+  "self-service-laundromat-brookshire-tx": "Washers from $3.75",
   "wash-and-fold-brookshire-tx": "$1.50/lb",
   "comforter-cleaning-brookshire-tx": "From $20",
   "dry-cleaning-brookshire-tx": "Shirts $2.25",
