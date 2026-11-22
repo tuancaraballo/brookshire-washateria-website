@@ -256,7 +256,7 @@ export const services: Service[] = [
     lead:
       "Professional dry cleaning and pressing for suits, shirts, dresses, coats and household items, ready the next day. Shirts start at $2.25 and two-piece suits at $10.50, with express service when you need it sooner.",
     highlights: ["Next-day ready", "Express available", "Shirts $2.25", "Suits $10.50"],
-    image: { file: "dry-cleaning-rack.jpg", alt: "Pressed suits and dresses in garment bags on the rack at Brookshire Washateria & Cleaners" },
+    image: { file: "dry-cleaning-rack.jpg", alt: "Pressed dress shirts and a suit jacket in clear garment bags on a rack, with folded slacks, at Brookshire Washateria & Cleaners" },
     sections: [
       {
         heading: "What we dry clean",
