@@ -3,7 +3,7 @@ import Link from "next/link";
 import SmartImage from "@/components/SmartImage";
 import JsonLd from "@/components/JsonLd";
 import Icon from "@/components/Icon";
-import { AreaChips, ContentBody, CtaBand, FaqList, MachineGallery, PhotoStrip, PageHero, PriceTable, ServiceCard } from "@/components/blocks";
+import { AreaChips, ContentBody, CtaBand, ContaminantNotice, FaqList, MachineGallery, PhotoStrip, PageHero, PriceTable, ServiceCard } from "@/components/blocks";
 import { dryers, washers } from "@/data/machines";
 import { getService, services } from "@/data/services";
 import { business } from "@/data/business";
@@ -62,6 +62,7 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
                 </div>
               </div>
             )}
+            {service.dropOff && <ContaminantNotice className="mt-6" />}
           </div>
 
           <aside className="space-y-6 lg:sticky lg:top-28 lg:self-start">

@@ -6,6 +6,7 @@ import type { Faq, Service } from "@/data/services";
 import { areas } from "@/data/areas";
 import type { Machine, dryers as dryersData } from "@/data/machines";
 import SmartImage from "./SmartImage";
+import { contaminantPolicy } from "@/data/policies";
 
 /* ---------- Breadcrumbs ---------- */
 export function Breadcrumbs({ items }: { items: { name: string; path?: string }[] }) {
@@ -344,5 +345,17 @@ export function PhotoStrip({ title, intro, images }: NonNullable<Service["galler
         </div>
       </div>
     </section>
+  );
+}
+
+/* ---------- Fine print: items we can't accept ---------- */
+export function ContaminantNotice({ className = "" }: { className?: string }) {
+  return (
+    <div className={`rounded-xl border border-line bg-white px-4 py-3 text-xs leading-relaxed text-ink-soft ${className}`}>
+      <p>
+        <strong className="font-semibold text-ink">Items we can&apos;t accept:</strong> {contaminantPolicy.en}
+      </p>
+      <p className="mt-1" lang="es">{contaminantPolicy.es}</p>
+    </div>
   );
 }

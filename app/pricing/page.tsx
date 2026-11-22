@@ -1,6 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
-import { CtaBand, FaqList, PageHero, PriceTable } from "@/components/blocks";
+import { ContaminantNotice, CtaBand, FaqList, PageHero, PriceTable } from "@/components/blocks";
 import { allPriceGroups, PRICES_UPDATED } from "@/data/pricing";
 import { sister } from "@/data/business";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
@@ -65,6 +65,7 @@ export default function PricingPage() {
               </p>
             </div>
           </div>
+          <ContaminantNotice className="mt-8" />
         </div>
       </section>
 

@@ -22,6 +22,7 @@ export type Service = {
   sections: ContentSection[];
   priceGroups: PriceGroup[];
   showMachines?: boolean; // machine photo gallery (self-serve page)
+  dropOff?: boolean; // shows the "items we can't accept" fine print
   gallery?: { title: string; intro?: string; images: { file: string; alt: string; portrait?: boolean; crop?: "top" | "bottom" }[] };
   faqs: Faq[];
   areaSlugs: string[]; // neighborhoods to link to
@@ -109,6 +110,7 @@ export const services: Service[] = [
   },
   {
     slug: "wash-and-fold-brookshire-tx",
+    dropOff: true,
     name: "Wash & Fold",
     icon: "basket",
     h1: "Same-Day Wash & Fold in Brookshire, TX",
@@ -161,6 +163,7 @@ export const services: Service[] = [
         a: "Yes. Laundry dropped off earlier in the day is ready the same day. Late drop-offs are ready the next morning.",
       },
       { q: "Is there a minimum?", a: "Yes, wash & fold has a 10 lb minimum ($15 at $1.50/lb). Above that, you pay for what your laundry weighs on our scale." },
+      { q: "Is there anything you can't accept?", a: "Yes. For the safety of our staff, we can't accept clothes or bedding soiled with blood, feces or any other biohazard or contaminant. We may decline or return any order that poses a health or safety risk." },
       {
         q: "Can I request a detergent or special care?",
         a: "Yes. Tell us at drop-off if you want a particular detergent, no softener, or items hung instead of folded.",
@@ -179,6 +182,7 @@ export const services: Service[] = [
   },
   {
     slug: "comforter-cleaning-brookshire-tx",
+    dropOff: true,
     name: "Comforter Cleaning",
     icon: "bed",
     h1: "Comforter & Bedding Cleaning in Brookshire, Near Fulshear",
@@ -247,6 +251,7 @@ export const services: Service[] = [
   },
   {
     slug: "dry-cleaning-brookshire-tx",
+    dropOff: true,
     name: "Dry Cleaning",
     icon: "hanger",
     h1: "Next-Day Dry Cleaners in Brookshire, TX",
@@ -311,6 +316,7 @@ export const services: Service[] = [
   },
   {
     slug: "ironing-pressing-brookshire-tx",
+    dropOff: true,
     name: "Ironing & Pressing",
     icon: "iron",
     h1: "Ironing & Pressing Service in Brookshire, TX",
@@ -358,6 +364,7 @@ export const services: Service[] = [
   },
   {
     slug: "rug-cleaning-brookshire-tx",
+    dropOff: true,
     name: "Rugs & Bulky Items",
     icon: "rug",
     h1: "Rug, Pet Bed & Bulky Item Cleaning in Brookshire, TX",
