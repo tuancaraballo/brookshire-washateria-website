@@ -160,7 +160,7 @@ export const services: Service[] = [
         q: "Is it really same-day?",
         a: "Yes. Laundry dropped off earlier in the day is ready the same day. Late drop-offs are ready the next morning.",
       },
-      { q: "Is there a minimum?", a: "No minimum for drop-off wash & fold. You pay for what it weighs." },
+      { q: "Is there a minimum?", a: "Yes, wash & fold has a 10 lb minimum ($15 at $1.50/lb). Above that, you pay for what your laundry weighs on our scale." },
       {
         q: "Can I request a detergent or special care?",
         a: "Yes. Tell us at drop-off if you want a particular detergent, no softener, or items hung instead of folded.",

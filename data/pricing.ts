@@ -47,7 +47,7 @@ export const selfServe: PriceGroup = {
 export const washFold: PriceGroup = {
   id: "wash-fold",
   title: "Wash & fold (drop-off laundry)",
-  description: "Same-day service. Priced by weight on our scale.",
+  description: "Same-day service. Priced by weight on our scale, 10 lb minimum.",
   items: [
     { name: "Wash, dry & fold", es: "Lavado y doblado", regular: 1.5, unit: "lb" },
     { name: "Folding only", es: "Solo doblado", regular: 1.0, unit: "lb" },
