@@ -149,7 +149,7 @@ export default function HomePage() {
       {/* More than laundry */}
       <section className="py-16 md:py-24">
         <div className="container-site grid gap-12 lg:grid-cols-2 lg:items-center">
-          <SmartImage file="money-counter.jpg" alt="Money transfer and bill pay counter inside Brookshire Washateria" icon="money" className="aspect-[4/3] rounded-3xl" />
+          <SmartImage file="money-counter.jpg" alt="Ria money transfer, bill pay and phone refill counter inside Brookshire Washateria" icon="money" className="aspect-[4/3] rounded-3xl" />
           <div>
             <p className="font-semibold text-sky-dark">More than laundry</p>
             <h2 className="mt-2 text-3xl font-bold md:text-4xl">Send money and pay bills while the dryer runs</h2>
