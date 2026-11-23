@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import Icon from "@/components/Icon";
+import SmartImage from "@/components/SmartImage";
 import { AreaChips, CtaBand, FaqList, PageHero, ServiceCard, VisitCard } from "@/components/blocks";
 import { areas, getArea } from "@/data/areas";
 import { services } from "@/data/services";
@@ -44,7 +45,19 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
           ]),
         ]}
       />
-      <PageHero title={h1} lead={area.lead} crumbs={[{ name: "Service Areas", path: "/service-areas" }, { name: area.name }]} />
+      <PageHero title={h1} lead={area.lead} crumbs={[{ name: "Service Areas", path: "/service-areas" }, { name: area.name }]}>
+        {area.image && (
+          <SmartImage
+            file={area.image.file}
+            alt={area.image.alt}
+            icon="pin"
+            priority
+            className="hidden aspect-[4/3] rounded-3xl ring-1 ring-white/20 lg:flex"
+            imgClassName={area.image.crop === "bottom" ? "object-bottom" : area.image.crop === "top" ? "object-top" : ""}
+            sizes="40vw"
+          />
+        )}
+      </PageHero>
 
       <section className="py-14 md:py-20">
         <div className="container-site grid gap-12 lg:grid-cols-[1fr_22rem]">

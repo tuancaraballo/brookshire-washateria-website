@@ -20,6 +20,7 @@ export type Area = {
   faqs: Faq[];
   nearby: string[]; // area slugs
   frySlug?: string; // matching Fry pickup page, if one exists
+  image?: { file: string; alt: string; crop?: "top" | "bottom" }; // hero photo in public/images
   sources: { label: string; url: string }[];
 };
 
@@ -36,7 +37,7 @@ export const areas: Area[] = [
     lead:
       "Fulshear households are a straight drive up FM 359 from our store. Drop off dry cleaning, comforters and wash & fold on the way to I-10, or wash in our large-capacity self-serve machines any day from 7am to 9pm.",
     about: [
-      "Fulshear has grown from a small Fort Bend County town into one of the Houston area's most sought-after places to live, with award-winning master-planned communities such as Cross Creek Ranch and Weston Lakes, along with Fulbrook on Fulshear Creek, Polo Ranch and parts of Firethorne.",
+      "Fulshear has grown from a small Fort Bend County town into one of the Houston area's most sought-after places to live, with award-winning master-planned communities such as Cross Creek Ranch and Weston Lakes, along with Fulbrook on Fulshear Creek, Fulshear Run, Polo Ranch and parts of Firethorne.",
       "Many Fulshear families commute toward Katy and Houston on I-10. Our store on FM 359 sits between Fulshear and the I-10 on-ramp, which makes it an easy morning drop-off and evening pickup.",
     ],
     gettingHere:
@@ -57,7 +58,7 @@ export const areas: Area[] = [
       },
       { q: "What are your hours?", a: "7am to 9pm, seven days a week. Last wash at 7:30pm." },
     ],
-    nearby: ["cross-creek-ranch", "fulbrook", "weston-lakes", "polo-ranch"],
+    nearby: ["cross-creek-ranch", "fulbrook", "fulshear-run", "weston-lakes", "polo-ranch"],
     sources: [
       { label: "HoustonProperties: Fulshear guide", url: "https://houstonproperties.com/houston-neighborhoods/fulshear" },
       { label: "HAR: Fulshear 77441 neighborhoods", url: "https://www.har.com/zipcode_77441/neighborhoods" },
@@ -114,6 +115,7 @@ export const areas: Area[] = [
   },
   {
     slug: "jordan-ranch",
+    image: { file: "brookshire_washateria_service_areas_jordan-ranch.jpg", alt: "Jordan Ranch entrance monument with the JR logo and Fulshear Texas lettering" },
     name: "Jordan Ranch",
     tier: 1,
     kind: "community",
@@ -155,6 +157,7 @@ export const areas: Area[] = [
   },
   {
     slug: "cross-creek-ranch",
+    image: { file: "brookshire_washateria_service_areas_cross-creek-ranch.jpg", alt: "Cross Creek Ranch entrance arches and lit water feature at dusk in Fulshear" },
     name: "Cross Creek Ranch",
     tier: 1,
     kind: "community",
@@ -196,6 +199,7 @@ export const areas: Area[] = [
   },
   {
     slug: "fulbrook",
+    image: { file: "brookshire_washateria_service_areas_fulbrook.jpg", alt: "Fulbrook on Fulshear Creek entrance sign with clock tower" },
     name: "Fulbrook on Fulshear Creek",
     tier: 1,
     kind: "community",
@@ -219,7 +223,7 @@ export const areas: Area[] = [
         a: "Alterations are offered at our sister store, Fry Washateria & Cleaners on North Fry Road in Katy.",
       },
     ],
-    nearby: ["fulshear", "cross-creek-ranch", "weston-lakes", "polo-ranch"],
+    nearby: ["fulshear", "cross-creek-ranch", "fulshear-run", "weston-lakes", "polo-ranch"],
     frySlug: "fulbrook-on-fulshear-creek",
     sources: [
       { label: "HAR: Fulshear 77441 neighborhoods", url: "https://www.har.com/zipcode_77441/neighborhoods" },
@@ -227,7 +231,47 @@ export const areas: Area[] = [
     ],
   },
   {
+    slug: "fulshear-run",
+    name: "Fulshear Run",
+    tier: 1,
+    kind: "community",
+    locality: "Fulshear, TX 77441 / 77406",
+    image: { file: "brookshire_washateria_service_areas_fulshear-run.jpg", alt: "Fulshear Run entrance monument with stone wall and pergola in Fulshear" },
+    metaTitle: "Dry Cleaners & Rug Cleaning Near Fulshear Run | Brookshire Washateria",
+    metaDescription:
+      "Dry cleaning, comforter and rug cleaning, and same-day wash & fold near Fulshear Run. A short drive from downtown Fulshear up FM 359. Open 7am–9pm daily.",
+    lead:
+      "Fulshear Run homes sit on big lots under old trees, and that means rugs, outdoor cushions, bedding and plenty of work clothes. Bring them to us on FM 359, any day from 7am to 9pm.",
+    about: [
+      "Fulshear Run is a small master-planned neighborhood off FM 1093 and Bois d'Arc, tucked between Fulshear City Hall and downtown. It's known for half-acre to one-acre-plus homesites, mature pecan and oak trees, walking trails and fishing lakes.",
+      "Large homes on acreage bring plenty of household cleaning: area rugs, patio cushion covers, king comforters and drapes, along with dry cleaning for the work week.",
+    ],
+    gettingHere: "From Fulshear Run, head into downtown Fulshear and take FM 359 north toward Brookshire. We're at 418 FM 359.",
+    popularServices: ["rug-cleaning-brookshire-tx", "comforter-cleaning-brookshire-tx", "dry-cleaning-brookshire-tx"],
+    faqs: [
+      {
+        q: "Can you clean outdoor cushion covers and area rugs?",
+        a: "Yes. Sofa and patio cushion covers are $20 each, and washable area rugs are $25–$50 depending on size.",
+      },
+      {
+        q: "How far is your store from Fulshear Run?",
+        a: "We're a straight drive from downtown Fulshear up FM 359 to Brookshire, with no highway needed.",
+      },
+      {
+        q: "Is there laundry pickup in Fulshear Run?",
+        a: "Yes, through our sister store, Fry Washateria & Cleaners, which offers pickup and delivery in Fulshear Run.",
+      },
+    ],
+    nearby: ["fulshear", "fulbrook", "cross-creek-ranch", "weston-lakes"],
+    frySlug: "fulshear-run",
+    sources: [
+      { label: "Houston Chronicle: Fulshear Run features half-acre sites", url: "https://www.pressreader.com/usa/houston-chronicle-sunday/20170723/283497911106050" },
+      { label: "HAR: Fulshear Run listing (location)", url: "https://www-v2.har.com/web/BenevidesAssociates/sold_detail/28173987" },
+    ],
+  },
+  {
     slug: "weston-lakes",
+    image: { file: "brookshire_washateria_service_areas_weston-lakes.jpg", alt: "Brick home on the lake with crape myrtles in bloom in Weston Lakes" },
     name: "Weston Lakes",
     tier: 1,
     kind: "community",
