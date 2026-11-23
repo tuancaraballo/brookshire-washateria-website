@@ -27,6 +27,7 @@ export type Area = {
 export const areas: Area[] = [
   {
     slug: "fulshear",
+    image: { file: "brookshire_washateria_service_areas_fulshear.jpg", alt: "Welcome to Fulshear stone monument sign" },
     name: "Fulshear",
     tier: 1,
     kind: "city",
