@@ -12,6 +12,9 @@ import { pageMeta } from "@/lib/seo";
 
 export const dynamicParams = false;
 
+// Full class names so Tailwind picks them up
+const cropClass = { top: "object-top", bottom: "object-bottom", left: "object-left", right: "object-right" } as const;
+
 export function generateStaticParams() {
   return areas.map((a) => ({ slug: a.slug }));
 }
@@ -53,7 +56,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
             icon="pin"
             priority
             className="hidden aspect-[4/3] rounded-3xl ring-1 ring-white/20 lg:flex"
-            imgClassName={area.image.crop === "bottom" ? "object-bottom" : area.image.crop === "top" ? "object-top" : ""}
+            imgClassName={area.image.crop ? cropClass[area.image.crop] : ""}
             sizes="40vw"
           />
         )}

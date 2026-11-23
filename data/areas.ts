@@ -20,7 +20,7 @@ export type Area = {
   faqs: Faq[];
   nearby: string[]; // area slugs
   frySlug?: string; // matching Fry pickup page, if one exists
-  image?: { file: string; alt: string; crop?: "top" | "bottom" }; // hero photo in public/images
+  image?: { file: string; alt: string; crop?: "top" | "bottom" | "left" | "right" }; // hero photo in public/images
   sources: { label: string; url: string }[];
 };
 
@@ -66,6 +66,7 @@ export const areas: Area[] = [
   },
   {
     slug: "tamarron",
+    image: { file: "brookshire_washateria_service_areas_tamarron.jpg", alt: "Tamarron entrance monument with fountain and cypress trees", crop: "left" },
     name: "Tamarron",
     tier: 1,
     kind: "community",
