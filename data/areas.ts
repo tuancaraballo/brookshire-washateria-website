@@ -436,6 +436,7 @@ export const areas: Area[] = [
   },
   {
     slug: "polo-ranch",
+    image: { file: "brookshire_washateria_service_areas_polo-ranch.jpg", alt: "Polo Ranch by Century Communities entrance sign" },
     name: "Polo Ranch",
     tier: 2,
     kind: "community",
