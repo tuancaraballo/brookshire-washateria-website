@@ -33,8 +33,7 @@ export default function BlogIndex() {
                   file={p.cover.file}
                   alt={p.cover.alt}
                   icon="basket"
-                  className="aspect-[16/10]"
-                  imgClassName="object-bottom"
+                  className="aspect-[4/3]"
                   sizes="(min-width: 768px) 50vw, 100vw"
                 />
               )}

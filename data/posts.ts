@@ -61,6 +61,11 @@ export const posts: Post[] = [
   },
   {
     slug: "laundromat-vs-wash-and-fold",
+    cover: {
+      file: "blog-laundromat-or-wash-fold.jpg",
+      alt: "Customer loading a washer at Brookshire Washateria next to a finished wash and fold order on the counter",
+      og: "blog-laundromat-or-wash-fold-og.jpg",
+    },
     title: "Laundromat or Wash & Fold? How to Choose for Your Household",
     metaDescription:
       "Self-serve laundromat or drop-off wash & fold at $1.50/lb? Compare time, cost and convenience for Brookshire, Sunterra and Fulshear families.",
