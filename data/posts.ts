@@ -23,7 +23,7 @@ export const posts: Post[] = [
     title: "How to Wash a King Comforter (and When to Let Us Do It)",
     metaDescription:
       "Step-by-step guide to washing a king comforter at a laundromat, how often to clean it, and when professional comforter cleaning in Brookshire or Fulshear makes more sense.",
-    date: "2026-11-13",
+    date: "2026-11-17",
     excerpt: "Most home washers are too small for a king comforter. Here's how to clean one properly at the laundromat, and when to hand it off.",
     sections: [
       {
@@ -69,7 +69,7 @@ export const posts: Post[] = [
     title: "Laundromat or Wash & Fold? How to Choose for Your Household",
     metaDescription:
       "Self-serve laundromat or drop-off wash & fold at $1.50/lb? Compare time, cost and convenience for Brookshire, Sunterra and Fulshear families.",
-    date: "2026-11-13",
+    date: "2026-11-24",
     excerpt: "Doing it yourself saves money; dropping it off saves hours. Here's how to decide which fits your week.",
     sections: [
       {

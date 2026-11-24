@@ -22,7 +22,7 @@ export default function BlogIndex() {
       />
       <section className="py-14 md:py-20">
         <div className="container-site grid gap-6 md:grid-cols-2">
-          {posts.map((p) => (
+          {[...posts].sort((a, b) => b.date.localeCompare(a.date)).map((p) => (
             <Link
               key={p.slug}
               href={`/blog/${p.slug}`}
