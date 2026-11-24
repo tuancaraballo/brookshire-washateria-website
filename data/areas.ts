@@ -408,6 +408,7 @@ export const areas: Area[] = [
   },
   {
     slug: "bluestem",
+    image: { file: "brookshire_washateria_service_areas_bluestem.jpg", alt: "Bluestem entrance silo sign surrounded by prairie grasses at sunset" },
     name: "Bluestem",
     tier: 2,
     kind: "community",
