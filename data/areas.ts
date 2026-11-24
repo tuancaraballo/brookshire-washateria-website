@@ -463,6 +463,7 @@ export const areas: Area[] = [
   },
   {
     slug: "simonton-pattison-san-felipe-waller",
+    image: { file: "brookshire_washateria_service_areas_simonton-pattison-san-felipe-waller.jpg", alt: "Horses at a pasture fence on a ranch near Pattison and Simonton" },
     name: "Simonton, Pattison, San Felipe & Waller",
     tier: 2,
     kind: "towns",
