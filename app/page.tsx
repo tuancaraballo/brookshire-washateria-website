@@ -100,7 +100,7 @@ export default function HomePage() {
           <a href={business.social.google} className="flex items-center gap-3">
             <Icon name="star" className="h-8 w-8 shrink-0 text-lime" />
             <span className="text-sm">
-              <span className="block font-bold text-ink">{business.stats.googleReviewCount}+ Google reviews</span>
+              <span className="block font-bold text-ink">{business.stats.googleRating}★ · {business.stats.googleReviewCount}+ Google reviews</span>
               <span className="text-ink-soft">Read what neighbors say</span>
             </span>
           </a>

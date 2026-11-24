@@ -29,7 +29,8 @@ export function localBusinessSchema() {
     logo: `${SITE_URL}/images/logo.png`,
     priceRange: business.priceRange,
     address: postalAddress,
-    hasMap: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fullAddress)}`,
+    hasMap: business.mapsUrl,
+    geo: { "@type": "GeoCoordinates", latitude: business.geo.latitude, longitude: business.geo.longitude },
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",

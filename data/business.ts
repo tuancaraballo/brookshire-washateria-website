@@ -29,14 +29,18 @@ export const business = {
   },
   priceRange: "$",
   mapsQuery: "Brookshire Washateria & Cleaners, 418 FM 359, Brookshire, TX 77423",
+  // Pin location and listing link from the Google Business Profile
+  geo: { latitude: 29.7757305, longitude: -95.9518941 },
+  mapsUrl: "https://maps.google.com/?cid=1519841316959122348",
   social: {
     google: "https://share.google/oSgQnXTLHuYiYq3Mx", // Google Business Profile (owner's share link)
     yelp: "https://www.yelp.com/biz/brookshire-washateria-and-cleaners-brookshire",
     facebook: "", // TODO: add the Facebook page URL
   },
   stats: {
-    googleRating: 4.0,
-    googleReviewCount: 73,
+    // From the Google Business Profile, Nov 24 2026. Update now and then.
+    googleRating: 4.3,
+    googleReviewCount: 180,
     itemsCleaned: "11,500+",
   },
   amenities: [
@@ -45,6 +49,7 @@ export const business = {
     "Vending: $1 drinks and snacks",
     "Detergent, softener and bags for sale",
     "Attendant on site",
+    "Wheelchair accessible entrance, parking and restroom",
   ],
 } as const;
 
