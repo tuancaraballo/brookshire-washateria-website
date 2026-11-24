@@ -305,6 +305,7 @@ export const areas: Area[] = [
   },
   {
     slug: "brookshire",
+    image: { file: "brookshire_washateria_service_areas_brookshire.jpg", alt: "Welcome to Brookshire stone sign surrounded by flowers" },
     name: "Brookshire",
     tier: 2,
     kind: "city",
