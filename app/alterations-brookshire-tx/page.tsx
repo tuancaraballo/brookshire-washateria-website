@@ -13,7 +13,7 @@ const path = "/alterations-brookshire-tx";
 export const metadata = pageMeta({
   title: "Alterations Near Brookshire, TX | At Our Fry Washateria Location",
   description:
-    "Alterations for Brookshire and Fulshear customers are offered at our sister location, Fry Washateria & Cleaners, 2501 N Fry Rd, Katy: hems, buttons, badges and rush service.",
+    "Alterations for Brookshire and Fulshear customers at our sister store, Fry Washateria & Cleaners, 2501 N Fry Rd, Katy: hems, buttons, badges and rush service.",
   path,
 });
 

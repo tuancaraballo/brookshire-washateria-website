@@ -22,7 +22,7 @@ export const posts: Post[] = [
     },
     title: "How to Wash a King Comforter (and When to Let Us Do It)",
     metaDescription:
-      "Step-by-step guide to washing a king comforter at a laundromat, how often to clean it, and when professional comforter cleaning in Brookshire or Fulshear makes more sense.",
+      "How to wash a king comforter at a laundromat, how often to clean it, and when professional comforter cleaning in Brookshire or Fulshear makes more sense.",
     date: "2026-11-17",
     excerpt: "Most home washers are too small for a king comforter. Here's how to clean one properly at the laundromat, and when to hand it off.",
     sections: [

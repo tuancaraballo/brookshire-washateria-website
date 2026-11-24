@@ -188,7 +188,7 @@ export const services: Service[] = [
     h1: "Comforter & Bedding Cleaning in Brookshire, Near Fulshear",
     metaTitle: "Comforter Cleaning in Brookshire & Fulshear, TX | From $25",
     metaDescription:
-      "Professional comforter, duvet, blanket and pillow cleaning on FM 359. Washed from $25 or dry cleaned from $20. Serving Fulshear, Tamarron, Cross Creek Ranch and Weston Lakes.",
+      "Professional comforter, duvet, blanket and pillow cleaning on FM 359. Washed from $25 or dry cleaned from $20. Serving Fulshear, Tamarron and Cross Creek Ranch.",
     lead:
       "Home washers are too small for most comforters. We clean queen and king comforters, duvets, blankets, pillows and mattress covers in large-capacity machines, then dry them all the way through so they come back fluffy and fresh.",
     highlights: ["Washed from $25", "Dry cleaned from $20", "King & extra-heavy sizes", "Pillows & mattress covers too"],
@@ -257,7 +257,7 @@ export const services: Service[] = [
     h1: "Next-Day Dry Cleaners in Brookshire, TX",
     metaTitle: "Dry Cleaners in Brookshire, TX | Next-Day, Near Fulshear & Katy",
     metaDescription:
-      "Next-day dry cleaning on FM 359: shirts $2.25, suits $10.50, dresses from $8. Express service available. Convenient for Fulshear, Jordan Ranch, Tamarron and I-10 commuters.",
+      "Next-day dry cleaning on FM 359: shirts $2.25, suits $10.50, dresses from $8. Express service available. Close to Fulshear, Jordan Ranch and I-10 commuters.",
     lead:
       "Professional dry cleaning and pressing for suits, shirts, dresses, coats and household items, ready the next day. Shirts start at $2.25 and two-piece suits at $10.50, with express service when you need it sooner.",
     highlights: ["Next-day ready", "Express available", "Shirts $2.25", "Suits $10.50"],

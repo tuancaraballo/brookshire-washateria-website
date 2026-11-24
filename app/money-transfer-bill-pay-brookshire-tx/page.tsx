@@ -10,7 +10,7 @@ import type { Faq } from "@/data/services";
 const path = "/money-transfer-bill-pay-brookshire-tx";
 
 export const metadata = pageMeta({
-  title: "RIA Money Transfer & Bill Pay in Brookshire, TX | Brookshire Washateria",
+  title: "RIA Money Transfer & Bill Pay in Brookshire, TX",
   description:
     "Send money with RIA, pay bills and refill your phone at Brookshire Washateria on FM 359. Open 7am–9pm daily. Envíos de dinero RIA y pago de biles en Brookshire.",
   path,

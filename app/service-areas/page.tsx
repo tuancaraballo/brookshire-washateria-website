@@ -9,9 +9,9 @@ import { breadcrumbSchema } from "@/lib/schema";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "Areas We Serve: Brookshire, Fulshear, Tamarron & West Katy | Brookshire Washateria",
+  title: "Areas We Serve: Brookshire, Fulshear & West Katy, TX",
   description:
-    "Brookshire Washateria on FM 359 serves Brookshire, Fulshear, Tamarron, Jordan Ranch, Cross Creek Ranch, Fulbrook, Weston Lakes, Sunterra, Freeman Ranch, Bluestem and nearby towns.",
+    "Laundry and dry cleaning on FM 359 for Brookshire, Fulshear, Tamarron, Jordan Ranch, Cross Creek Ranch, Fulbrook, Weston Lakes, Sunterra and nearby towns.",
   path: "/service-areas",
 });
 

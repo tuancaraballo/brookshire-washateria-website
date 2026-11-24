@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getPost((await params).slug);
   if (!post) return {};
   return pageMeta({
-    title: `${post.title} | Brookshire Washateria`,
+    title: post.title,
     description: post.metaDescription,
     path: `/blog/${post.slug}`,
     image: post.cover?.og ? `/images/${post.cover.og}` : undefined,

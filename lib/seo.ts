@@ -10,7 +10,8 @@ export function pageMeta({ title, description, path, image }: { title: string; d
       title,
       description,
       url: path,
-      ...(image ? { images: [{ url: image, width: 1200, height: 630 }] } : {}),
+      // A page-level openGraph replaces the layout one, so always set an image (site default if none given)
+      images: [{ url: image ?? "/images/og-default.jpg", width: 1200, height: 630 }],
     },
     twitter: { title, description },
   };

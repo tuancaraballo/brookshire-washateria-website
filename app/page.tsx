@@ -11,9 +11,9 @@ import { pageMeta } from "@/lib/seo";
 import type { Faq } from "@/data/services";
 
 export const metadata = pageMeta({
-  title: "Laundromat & Dry Cleaners in Brookshire, TX | Brookshire Washateria",
+  title: "Brookshire Laundromat & Dry Cleaners | Brookshire Washateria",
   description:
-    "Brookshire's laundromat on FM 359: big self-serve washers, same-day wash & fold ($1.50/lb), next-day dry cleaning, comforters, ironing, RIA money transfer and bill pay. Open 7am–9pm daily.",
+    "Laundromat on FM 359 in Brookshire: big washers, same-day wash & fold ($1.50/lb), next-day dry cleaning, comforters and RIA money transfer. Open 7am–9pm daily.",
   path: "/",
 });
 

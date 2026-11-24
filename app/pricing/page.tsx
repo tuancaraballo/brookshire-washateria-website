@@ -8,9 +8,9 @@ import { pageMeta } from "@/lib/seo";
 import type { Faq } from "@/data/services";
 
 export const metadata = pageMeta({
-  title: "Prices: Wash & Fold, Dry Cleaning, Comforters | Brookshire Washateria",
+  title: "Laundry & Dry Cleaning Prices | Brookshire Washateria",
   description:
-    "Full price list for Brookshire Washateria & Cleaners: self-serve washers from $3.75, wash & fold $1.50/lb, comforters from $20, shirts $2.25, suits $10.50, pressing from $2.50, rugs and pet beds. Regular and express prices.",
+    "Washers from $3.75, wash & fold $1.50/lb, comforters from $20, shirts $2.25, suits $10.50 and pressing from $2.50. Full price list for Brookshire Washateria.",
   path: "/pricing",
 });
 

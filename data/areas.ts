@@ -32,9 +32,9 @@ export const areas: Area[] = [
     tier: 1,
     kind: "city",
     locality: "Fulshear, TX 77441 · Fort Bend County",
-    metaTitle: "Laundromat & Dry Cleaners Near Fulshear, TX | Brookshire Washateria",
+    metaTitle: "Laundromat & Dry Cleaners Near Fulshear, TX",
     metaDescription:
-      "Dry cleaning, comforter cleaning and same-day wash & fold near Fulshear, a straight drive up FM 359. Open 7am–9pm daily. Serving Cross Creek Ranch, Fulbrook and Weston Lakes.",
+      "Dry cleaning, comforter cleaning and same-day wash & fold near Fulshear, a straight drive up FM 359. Open 7am–9pm daily. Serving Cross Creek Ranch and Fulbrook.",
     lead:
       "Fulshear households are a straight drive up FM 359 from our store. Drop off dry cleaning, comforters and wash & fold on the way to I-10, or wash in our large-capacity self-serve machines any day from 7am to 9pm.",
     about: [
@@ -164,7 +164,7 @@ export const areas: Area[] = [
     tier: 1,
     kind: "community",
     locality: "Fulshear, TX 77441",
-    metaTitle: "Dry Cleaners & Comforter Cleaning Near Cross Creek Ranch | Fulshear",
+    metaTitle: "Dry Cleaners & Comforter Cleaning Near Cross Creek Ranch",
     metaDescription:
       "Next-day dry cleaning, comforter and duvet cleaning, and same-day wash & fold for Cross Creek Ranch residents. On FM 359 in Brookshire, open 7am–9pm daily.",
     lead:
@@ -206,7 +206,7 @@ export const areas: Area[] = [
     tier: 1,
     kind: "community",
     locality: "Fulshear, TX 77441",
-    metaTitle: "Dry Cleaners Near Fulbrook on Fulshear Creek | Brookshire Washateria",
+    metaTitle: "Dry Cleaners Near Fulbrook on Fulshear Creek | Laundry",
     metaDescription:
       "Careful dry cleaning, wedding and formal wear, drapes, comforters and hand ironing near Fulbrook on Fulshear Creek. FM 359, Brookshire. Open 7am–9pm daily.",
     lead:
@@ -239,7 +239,7 @@ export const areas: Area[] = [
     kind: "community",
     locality: "Fulshear, TX 77441 / 77406",
     image: { file: "brookshire_washateria_service_areas_fulshear-run.jpg", alt: "Fulshear Run entrance monument with stone wall and pergola in Fulshear" },
-    metaTitle: "Dry Cleaners & Rug Cleaning Near Fulshear Run | Brookshire Washateria",
+    metaTitle: "Dry Cleaners & Rug Cleaning Near Fulshear Run, TX",
     metaDescription:
       "Dry cleaning, comforter and rug cleaning, and same-day wash & fold near Fulshear Run. A short drive from downtown Fulshear up FM 359. Open 7am–9pm daily.",
     lead:
@@ -278,7 +278,7 @@ export const areas: Area[] = [
     tier: 1,
     kind: "community",
     locality: "Fulshear area, TX",
-    metaTitle: "Dry Cleaners & Laundry Near Weston Lakes, TX | Brookshire Washateria",
+    metaTitle: "Dry Cleaners & Laundry Near Weston Lakes, TX",
     metaDescription:
       "Dry cleaning, comforter and rug cleaning, and same-day wash & fold near Weston Lakes. Brookshire Washateria on FM 359 is open 7am–9pm every day.",
     lead:
@@ -312,7 +312,7 @@ export const areas: Area[] = [
     locality: "Brookshire, TX 77423 · Waller County",
     metaTitle: "Laundromat in Brookshire, TX | Wash & Fold, Dry Cleaning, RIA",
     metaDescription:
-      "Brookshire's neighborhood laundromat on FM 359: self-serve washers, same-day wash & fold, dry cleaning, RIA money transfer, bill pay and phone refills. Open 7am–9pm daily.",
+      "Brookshire's neighborhood laundromat on FM 359: self-serve washers, same-day wash & fold, dry cleaning, RIA money transfer and bill pay. Open 7am–9pm daily.",
     lead:
       "We're Brookshire's hometown laundromat and cleaners on FM 359. Wash, drop off, dry clean, send money and pay bills, all in one stop, 7am to 9pm every day.",
     about: [
@@ -413,7 +413,7 @@ export const areas: Area[] = [
     tier: 2,
     kind: "community",
     locality: "Brookshire, TX 77423",
-    metaTitle: "Laundromat Near Bluestem, Brookshire TX | Wash & Fold, Money Transfer",
+    metaTitle: "Laundromat Near Bluestem, Brookshire TX | Wash & Fold",
     metaDescription:
       "Laundromat, same-day wash & fold, dry cleaning, RIA money transfer and bill pay near Bluestem in Brookshire. Open 7am–9pm daily on FM 359.",
     lead:
@@ -470,7 +470,7 @@ export const areas: Area[] = [
     locality: "Waller, Fort Bend and Austin Counties, TX",
     metaTitle: "Laundromat Near Simonton, Pattison, San Felipe & Waller, TX",
     metaDescription:
-      "The nearest full-service laundromat and dry cleaners for Simonton, Pattison, San Felipe and Waller. Big washers, same-day wash & fold, RIA and bill pay on FM 359 in Brookshire.",
+      "The nearest full-service laundromat and dry cleaners for Simonton, Pattison, San Felipe and Waller: big washers, same-day wash & fold and RIA on FM 359.",
     lead:
       "If you live out in the country around Brookshire, we're your closest full-service laundromat: big washers, same-day wash & fold, dry cleaning and money services in one stop.",
     about: [

@@ -2,7 +2,7 @@
 // Every page, the footer and the JSON-LD read from this file, so they never disagree.
 // Keep it identical to the Google Business Profile listing.
 
-export const SITE_URL = "https://brookshirewashateria.com";
+export const SITE_URL = "https://www.brookshirewashateria.com";
 
 export const business = {
   name: "Brookshire Washateria & Cleaners",
@@ -30,8 +30,8 @@ export const business = {
   priceRange: "$",
   mapsQuery: "Brookshire Washateria & Cleaners, 418 FM 359, Brookshire, TX 77423",
   social: {
-    google: "https://www.google.com/maps/search/?api=1&query=Brookshire+Washateria+%26+Cleaners+418+FM+359+Brookshire+TX",
-    yelp: "https://www.yelp.com/search?find_desc=Brookshire+Washateria&find_loc=Brookshire%2C+TX",
+    google: "https://share.google/oSgQnXTLHuYiYq3Mx", // Google Business Profile (owner's share link)
+    yelp: "", // TODO: add the Yelp business page URL (not a search URL)
     facebook: "", // TODO: add the Facebook page URL
   },
   stats: {

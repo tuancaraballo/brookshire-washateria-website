@@ -6,7 +6,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "Directions & Hours | Brookshire Washateria, 418 FM 359, Brookshire TX",
+  title: "Directions & Hours | Brookshire Washateria, 418 FM 359",
   description:
     "Find Brookshire Washateria & Cleaners at 418 FM 359, Brookshire, TX 77423, just south of I-10. Open 7am–9pm every day, last wash 7:30pm. Call (281) 206-8251.",
   path: "/contact",
