@@ -380,6 +380,7 @@ export const areas: Area[] = [
   },
   {
     slug: "freeman-ranch",
+    image: { file: "brookshire_washateria_service_areas_freeman-ranch.jpg", alt: "Freeman Ranch stone entrance monument with FR tower", crop: "right" },
     name: "Freeman Ranch",
     tier: 2,
     kind: "community",
