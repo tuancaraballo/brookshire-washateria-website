@@ -8,11 +8,18 @@ export type Post = {
   excerpt: string;
   sections: ContentSection[];
   relatedServices: string[];
+  // Cover photo in public/images (4:3), plus an optional 1200x630 crop used when the post is shared
+  cover?: { file: string; alt: string; og?: string };
 };
 
 export const posts: Post[] = [
   {
     slug: "how-to-wash-a-king-comforter",
+    cover: {
+      file: "blog-king-comforter.jpg",
+      alt: "Freshly cleaned white king comforter folded on the counter at Brookshire Washateria",
+      og: "blog-king-comforter-og.jpg",
+    },
     title: "How to Wash a King Comforter (and When to Let Us Do It)",
     metaDescription:
       "Step-by-step guide to washing a king comforter at a laundromat, how often to clean it, and when professional comforter cleaning in Brookshire or Fulshear makes more sense.",

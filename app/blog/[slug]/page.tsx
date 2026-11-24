@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
+import SmartImage from "@/components/SmartImage";
 import { ContentBody, CtaBand, PageHero, ServiceCard } from "@/components/blocks";
 import { getPost, posts } from "@/data/posts";
 import { services } from "@/data/services";
@@ -16,7 +17,12 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const post = getPost((await params).slug);
   if (!post) return {};
-  return pageMeta({ title: `${post.title} | Brookshire Washateria`, description: post.metaDescription, path: `/blog/${post.slug}` });
+  return pageMeta({
+    title: `${post.title} | Brookshire Washateria`,
+    description: post.metaDescription,
+    path: `/blog/${post.slug}`,
+    image: post.cover?.og ? `/images/${post.cover.og}` : undefined,
+  });
 }
 
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -39,6 +45,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             mainEntityOfPage: `${SITE_URL}${path}`,
             author: { "@type": "Organization", name: business.name },
             publisher: { "@id": `${SITE_URL}/#business` },
+            ...(post.cover ? { image: `${SITE_URL}/images/${post.cover.file}` } : {}),
           },
           breadcrumbSchema([
             { name: "Blog", path: "/blog" },
@@ -46,7 +53,18 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           ]),
         ]}
       />
-      <PageHero title={post.title} lead={post.excerpt} crumbs={[{ name: "Blog", path: "/blog" }, { name: post.title }]} />
+      <PageHero title={post.title} lead={post.excerpt} crumbs={[{ name: "Blog", path: "/blog" }, { name: post.title }]}>
+        {post.cover && (
+          <SmartImage
+            file={post.cover.file}
+            alt={post.cover.alt}
+            icon="basket"
+            priority
+            className="hidden aspect-[4/3] rounded-3xl ring-1 ring-white/20 lg:flex"
+            sizes="40vw"
+          />
+        )}
+      </PageHero>
       <article className="py-14 md:py-20">
         <div className="container-site max-w-3xl">
           <ContentBody sections={post.sections} />
