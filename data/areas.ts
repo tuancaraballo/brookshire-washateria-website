@@ -344,6 +344,7 @@ export const areas: Area[] = [
   },
   {
     slug: "sunterra",
+    image: { file: "brookshire_washateria_service_areas_sunterra.jpg", alt: "Sunterra entrance monument with fountains and tower in Katy near Brookshire" },
     name: "Sunterra",
     tier: 2,
     kind: "community",
