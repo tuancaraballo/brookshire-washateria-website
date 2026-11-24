@@ -25,6 +25,7 @@ export function GET() {
     `- Pickup & delivery and alterations are offered by our sister store, ${sister.name} (${sister.address}, ${sister.phone}): ${sister.url}`,
     `- Items we can't accept: ${contaminantPolicy.en}`,
     `- Google Business Profile: ${business.social.google}`,
+    `- Yelp: ${business.social.yelp}`,
     "",
     "## Services",
     ...services.map((s) => `- [${s.name}](${url(`/${s.slug}`)}): ${s.metaDescription}`),

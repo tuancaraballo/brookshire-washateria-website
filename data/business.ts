@@ -31,7 +31,7 @@ export const business = {
   mapsQuery: "Brookshire Washateria & Cleaners, 418 FM 359, Brookshire, TX 77423",
   social: {
     google: "https://share.google/oSgQnXTLHuYiYq3Mx", // Google Business Profile (owner's share link)
-    yelp: "", // TODO: add the Yelp business page URL (not a search URL)
+    yelp: "https://www.yelp.com/biz/brookshire-washateria-and-cleaners-brookshire",
     facebook: "", // TODO: add the Facebook page URL
   },
   stats: {
